@@ -21,7 +21,7 @@ export default function Home() {
       <div className="px-4">
         <Heading>CONTROL for AWS</Heading>
         <SubHeading>
-          CONTROL is a suite of tools (CLI, GUI and docs) that help you setup,
+          CONTROL is a suite of tools (CLI, GUI and notes) that help you setup,
           configure and manage your applications and data on AWS. They apply
           best practices for security, performance and cost-optimization by
           default, and help you override these defaults when you need to.
@@ -32,9 +32,9 @@ export default function Home() {
             AWS is a collection of services and tools that each do a specific
             thing well. Using AWS effectively and securely requires
             understanding each of these tools and knowing how to use them with
-            each other. This often requires a lot of specialized research, study
-            and experimentation. We've done a lot of that, and written
-            everything we know into CONTROL.
+            each other. This requires a lot of research, study and
+            experimentation. The authors have done quite a bit of that, and
+            written everything we know into CONTROL.
           </DD>
         </dl>
       </div>
