@@ -51,12 +51,21 @@ const Home = () => (
           </P>
           <ul>
             <LI>
-              <StrongLink href="/applications">Applications</StrongLink> are
-              represented by a container image or codebase and associated
-              configuration in the form of environment variables. Designed to
-              use 12-Factor Principles, Applications can be deployed into one or
-              more Networks, and have one or more Services, Tasks, and
-              Datastores.
+              <StrongLink href="/applications">Applications</StrongLink> are the
+              top level construct in CONTROL. They represent a codebase and
+              associated configuration in the form of environment variables.
+              Designed to use 12-Factor Principles, Applications can be deployed
+              into one or more Networks, and have one or more Services, Tasks,
+              and Datastores.
+            </LI>
+            <LI>
+              <StrongLink href="/services">Services</StrongLink> are
+              always-running processes that listen for and respond to to HTTP
+              traffic. They are defined by their parent Application's code and
+              configuration, and an execution command, and they receive a{" "}
+              <code>PORT</code> to bind to. Examples are websites, APIs, gRPC
+              services and WebSocket servers. Services also have a URL assigned
+              to them, with automated SSL certificate management.
             </LI>
             <LI>
               <StrongLink href="/topics">Topics</StrongLink> are messaging
@@ -75,15 +84,7 @@ const Home = () => (
               different Networks, or keep testing and production environments
               for the same Application on separate isolated Networks.
             </LI>
-            <LI>
-              <StrongLink href="/services">Services</StrongLink> are
-              always-running processes that listen for and respond to to HTTP
-              traffic. They are defined by their parent Application's code and
-              configuration, and an execution command, and they receive a{" "}
-              <code>PORT</code> to bind to. Examples are websites, APIs, gRPC
-              services and WebSocket servers. Services also have a URL assigned
-              to them, with automated SSL certificate management.
-            </LI>
+
             <LI>
               <StrongLink href="/tasks">Tasks</StrongLink> are processes that
               may be always-running or scheduled periodically, and they do their
