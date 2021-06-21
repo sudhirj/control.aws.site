@@ -1,7 +1,9 @@
 import Head from "next/head";
 import {
+  Container,
   DD,
   DT,
+  HeadDiv,
   Heading,
   LI,
   P,
@@ -9,13 +11,18 @@ import {
   SubHeading,
 } from "./components/_atoms";
 import Link from "next/link";
+
 const Home = () => (
   <>
     <Head>
       <title>CONTROL / AWS</title>
     </Head>
-    <div className="px-4">
-      <Heading>CONTROL / AWS</Heading>
+    <Container>
+      <Heading>
+        <Link href="/">CONTROL</Link>
+        <HeadDiv />
+        AWS
+      </Heading>
       <SubHeading>
         A suite of tools — CLI, GUI and Docs — that help you setup, configure
         and manage your applications and data on AWS. They apply best practices
@@ -105,7 +112,7 @@ const Home = () => (
           <P></P>
         </DD>
       </dl>
-    </div>
+    </Container>
   </>
 );
 export default Home;

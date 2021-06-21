@@ -1,7 +1,12 @@
 import Link from "next/link";
+
 export const Heading = (props) => (
-  <h1 className="font-extrabold mt-24 text-3xl">{props.children}</h1>
+  <h1 className="font-extrabold mt-24 text-3xl break-normal flex flex-wrap">
+    {props.children}
+  </h1>
 );
+
+export const HeadDiv = () => <span className="px-2">/</span>;
 
 export const SubHeading = (props) => (
   <h3 className="mt-8 text-lg leading-normal text-gray-800 italic">
