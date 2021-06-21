@@ -1,4 +1,4 @@
-import { Container, Heading } from "./components/_atoms";
+import { Container, Heading } from "../components/_atoms";
 import Link from "next/link";
 export default () => (
   <>

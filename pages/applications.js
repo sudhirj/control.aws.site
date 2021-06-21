@@ -6,7 +6,7 @@ import {
   Heading,
   P,
   SubHeading,
-} from "./components/_atoms";
+} from "../components/_atoms";
 import Link from "next/link";
 import Head from "next/head";
 

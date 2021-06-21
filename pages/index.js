@@ -9,7 +9,7 @@ import {
   P,
   StrongLink,
   SubHeading,
-} from "./components/_atoms";
+} from "../components/_atoms";
 import Link from "next/link";
 
 const Home = () => (
